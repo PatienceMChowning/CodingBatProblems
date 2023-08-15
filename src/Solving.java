@@ -19,6 +19,9 @@ public class Solving {
     //Another solution for the above method would be to use a ternary operator:
     // --> return (!weekday || vacation) ? true : false;
     public static boolean sleepIn(boolean weekday, boolean vacation) {
+        if (!weekday || vacation) {
+            return true;
+        }
         return false;
     }
     //----------------------------------Problem 2-------------------------------
@@ -33,7 +36,10 @@ public class Solving {
     //I could do the same thing with a ternary operator for the sake of line
     //space, however this is a more readable option. 
     public static int sumDouble(int a, int b) {
-       return 0;
+        if (a != b) {
+            return a + b;
+        }
+        return (a + b) * 2;
     }
 
     //----------------------------------Problem 3-------------------------------
@@ -47,7 +53,10 @@ public class Solving {
      */
     //Decided to use Math.abs to cover any negatives that might be tested. 
     public static int diff21(int n) {
-        return 0;
+        if (n <= 21) {
+            return (21 - Math.abs((n)));
+        }
+        return ((21 - n) * 2);
     }
     
     //A main method to test operations
