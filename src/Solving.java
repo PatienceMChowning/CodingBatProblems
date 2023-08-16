@@ -101,6 +101,6 @@ public class Solving {
         System.out.println(stringTimes("Hi", 2)); 
         System.out.println(stringTimes("Hi", 3)); 
         System.out.println(stringTimes("Hi", 1)); 
-        System.out.println("-".repeat(10));
+        System.out.println("*".repeat(10));
     } 
 } //End of class
