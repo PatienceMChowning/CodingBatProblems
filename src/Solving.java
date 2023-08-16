@@ -59,6 +59,26 @@ public class Solving {
         return ((21 - n) * 2);
     }
     
+    //----------------------------------Problem 4-------------------------------
+    //-----------------------------Working with Strings-------------------------
+    
+    /**
+     * Given a string and a non-negative int n, return a larger string that is
+     * n copies of the original string.
+     * stringTimes("Hi", 2) → "HiHi"
+     * stringTimes("Hi", 3) → "HiHiHi"
+     * stringTimes("Hi", 1) → "Hi"
+     */
+    public static String stringTimes(String str, int n) {
+        //First we should create a seperate string to hold final answer.
+        String result = "";
+        //A for-loop to add str n amount of times.
+        for (int i = 0; i < n; i++) {
+            result += str;
+        }
+        return result;
+    }
+    
     //A main method to test operations
     public static void main(String[] args) {
         //Testing problem 1
@@ -76,6 +96,11 @@ public class Solving {
         System.out.println(diff21(10));
         System.out.println(diff21(21));
         System.out.println(diff21(-1));
+        System.out.println("-".repeat(10));
+        //Testing problem 4
+        System.out.println(stringTimes("Hi", 2)); 
+        System.out.println(stringTimes("Hi", 3)); 
+        System.out.println(stringTimes("Hi", 1)); 
         System.out.println("-".repeat(10));
     } 
 } //End of class
